@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bootstrap.css")
+    @Styles.Render("~/Content/font-awesome.css")
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Styles.Render("~/Content/nouislider.min.css")
+    @Styles.Render("~/Content/slick-theme.css")
+    @Styles.Render("~/Content/style.css")
+    @Styles.Render("~/Content/slick.css")
+    @Styles.Render("~/Content/menu.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("ALLOVER", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    <li>@Html.ActionLink("Catalogo", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="menu" id="menu">
+        <div class="contenedor contenedor-botones-menu">
+
+            <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i> <span>Menu</span></button>
+            <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="contenedor contenedor-enlaces-nav">
+
+            <div class="btn-departamentos" id="btn-departamentos">
+
+                <p>Todas los <span>Departamentos</span></p>
+                <i class="fas fa-caret-square-down"></i>
+
+            </div>
+        </div>
+
+        <div class="contenedor contenedor-grid">
+            <div class="grid " id="grid">
+                <div class="categorias">
+                    <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+                    <h3 class="subtitulo">Categorias</h3>
+
+                    <a href="#" data-categoria="computadoras"> Computadoras <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="telefonos">Telefonos <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="videojuegos">VideoJuegos <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="accesorios">Otos <i class="fas fa-angle-right"></i></a>
+
+                </div>
+
+
+                <div class="contenedor-subcategorias">
+                    <div class="subcategoria " data-categoria="computadoras">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                            <h3 class="subtitulo">Computadoras</h3>
+                            <a href="#">Laptops</a>
+                            <a href="#">Escritorio</a>
+                            <a href="#">Mac</a>
+                            <a href="#">Monitores</a>
+
+                        </div>
+
+                        <div class="enlaces-subcategoria">
+                            <br></br>
+                            <a href="#">Laptops</a>
+                            <a href="#">Escritorio</a>
+                            <a href="#">Mac</a>
+                            <a href="#">Monitores</a>
+                            <a href="#">Componentes</a>
+                        </div>
+
+                    </div>
+
+                    <div class="subcategoria " data-categoria="telefonos">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                            <h3 class="subtitulo">Telefonos</h3>
+                            <a href="#">Accesorios</a>
+                            <a href="#">Celulares</a>
+                            <a href="#">Smartwaches</a>
+                            <a href="#">Lentes de realidad virtual</a>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="subcategoria " data-categoria="videojuegos">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                            <h3 class="subtitulo">VideoJuegos</h3>
+                            <a href="#">Consolas</a>
+                            <a href="#">Controles</a>
+                            <a href="#">Juegos</a>
+                            <a href="#">Accesorios</a>
+                            <a href="#">Portatiles</a>
+
+                        </div>
+
+                        <div class="enlaces-subcategoria">
+                            <br></br>
+                            <a href="#">Xbox One </a>
+                            <a href="#">PlayStation 4</a>
+                            <a href="#">Nintendo Switch</a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/menu.js")
+    <script src="https://kit.fontawesome.com/1c770d1a23.js"></script>
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
