@@ -9,9 +9,9 @@ namespace Pagina.Models
 {
     public class Provedores
     {
-       
+       [Key]
         public int Id { get; set; }
-        [DisplayName("Nombre de la tienda")]
+        [Display(Name = "Nombre de la tienda")]
         public string Nombre { get; set; }
         [DisplayName("Tipo de tienda")]
         public string Tienda { get; set; }
