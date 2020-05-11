@@ -283,6 +283,14 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="img\vista1.jpg" />
+    <Content Include="img\vista2.jpg" />
+    <Content Include="img\vista3.jpg" />
+    <Content Include="img\vista4.jpg" />
+    <Content Include="img\vistapro1.jpg" />
+    <Content Include="img\vistapro2.jpg" />
+    <Content Include="img\vistapro3.jpg" />
+    <Content Include="img\vistapro4.jpg" />
     <Content Include="logo pagina.ico" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
