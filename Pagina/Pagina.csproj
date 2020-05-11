@@ -268,10 +268,14 @@
     <Content Include="img\fondo.png" />
     <Content Include="img\logo pagina.ico" />
     <Content Include="img\pro1.jpg" />
+    <Content Include="img\pro10.jpg" />
     <Content Include="img\pro2.jpg" />
     <Content Include="img\pro3.jpg" />
     <Content Include="img\pro4.jpg" />
     <Content Include="img\pro6.jpg" />
+    <Content Include="img\pro7.jpg" />
+    <Content Include="img\pro8.jpg" />
+    <Content Include="img\pro9.jpg" />
     <Content Include="img\Producto1.jpg" />
     <Content Include="img\producto6.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
